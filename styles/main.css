@@ -217,7 +217,7 @@ main {
     padding: 0;
   }
   .secLi {
-    color: rgba(19, 19, 24, 0.70);
+    color: rgba(19, 19, 24, 0.7);
     font-family: Mulish;
     font-size: 14px;
     font-style: normal;
@@ -225,6 +225,61 @@ main {
     line-height: 24px; /* 171.429% */
   }
   .img img {
+    width: 100%;
+  }
+}
+
+/* destination section */
+.destination {
+  display: flex;
+  flex-direction: column;
+}
+.destext {
+  width: 643px;
+  height: 126px;
+  flex-shrink: 0;
+  margin: 100px 25% 100px 25%;
+}
+.desh {
+  position: relative;
+  top: 45%;
+  left: 40%;
+}
+.destext h1 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.desImg > img {
+  margin: 0.4em;
+}
+
+/* Responsive destination section */
+@media screen and (max-width: 592px) {
+  .destination {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+  .destext {
+    width: 375px;
+    margin: 20px 0px 20px 0px;
+  }
+  .destext h1 {
+    width: 300px;
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .desImg > img {
     width: 100%;
   }
 }
