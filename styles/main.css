@@ -280,7 +280,7 @@ main {
 }
 
 /* Choose section */
-.sec-us-1 {
+.choose-1 {
   display: flex;
   justify-content: space-between;
   gap: 24px;
@@ -361,7 +361,7 @@ main {
   padding-right: 55px;
 }
 
-.sec-us-2 {
+.choose-2 {
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -391,9 +391,18 @@ main {
   padding-left: 32px;
   padding-right: 55px;
 }
+.secH4 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
 /* Responsive Choose section */
 @media screen and (max-width: 592px) {
-  .sec-us {
+  .choose {
     padding-left: 10px;
     padding-right: 20px;
     height: 1500px;
@@ -408,7 +417,7 @@ main {
     font-weight: 400;
     line-height: 24px; /* 171.429% */
   }
-  .sec-us-1 {
+  .choose-1 {
     flex-direction: column;
   }
   .card-f {
@@ -441,7 +450,7 @@ main {
     padding-bottom: 0px;
   }
 
-  .sec-us-2 {
+  .choose-2 {
     flex-direction: column;
   }
   .card-t {
@@ -458,5 +467,131 @@ main {
     padding: 40px;
     padding-top: 1px;
     padding-bottom: 0px;
+  }
+}
+
+/* Newsletter section */
+.newsL {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+  height: 370px;
+}
+.newsL-1 {
+  border: 1.5px#FF5400 solid;
+  border-radius: 16px;
+  padding: 17px;
+  width: 500px;
+  height: 370px;
+  margin-right: 20px;
+}
+.newsL-1 h4 {
+  padding-right: 300px;
+  font-size: 1.5rem;
+}
+.newsL-1 p {
+  padding-left: 2px;
+  padding-right: 20px;
+}
+.hL-1 {
+  border-top: 1px #5f5f5f solid;
+  width: 75%;
+  margin: 10px 50px;
+  margin-bottom: 8px;
+}
+.newsL-1 input[type="text"] {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.3);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1em;
+}
+.newsL-1 input[type="email"] {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.3);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1em;
+}
+.newsL-1 button {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.sp0 {
+  color: #fff;
+  font-weight: 800;
+}
+.ss {
+  border-radius: 16px;
+  width: 200px;
+  height: 90px;
+  transform: rotate(-19.628deg);
+  margin-bottom: 50px;
+  margin-right: 30px;
+  background: #ff5400;
+}
+.sp1 {
+  color: #fff;
+}
+.sp2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+}
+.newsL-2 {
+  border-radius: 16px;
+  width: 672px;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background: url("../B9A2-Hero-Travel/Images/news.png"),
+    lightgray 50% / cover no-repeat;
+}
+/* Responsive Newsletter section */
+@media screen and (max-width: 592px) {
+  .newsL {
+    flex-direction: column;
+  }
+  .newsL-1 {
+    width: 375px;
+    height: 7429px;
+    margin-bottom: 1.2em;
+  }
+  .newsL-1 input[type="text"],
+  .newsL-1 input[type="email"],
+  .newsL-1 button {
+    width: 350px;
+  }
+  .newsL-2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .ss {
+    margin-bottom: 10px;
+    margin-right: 0.2px;
   }
 }
