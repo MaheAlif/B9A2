@@ -153,3 +153,78 @@ main {
     background: #ff5400;
   }
 }
+
+/* Tours section */
+.tours {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+.secHead {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.secP {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 577px;
+}
+.toursText > ul {
+  width: 450px;
+  padding: 0;
+}
+.secLi {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 0;
+  margin-left: 20px;
+}
+
+/* Responsive tours section */
+@media screen and (max-width: 592px) {
+  .tours {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .secHead {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .secP {
+    width: 365px;
+  }
+  .toursText > ul {
+    width: 335px;
+    padding: 0;
+  }
+  .secLi {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  .img img {
+    width: 100%;
+  }
+}
